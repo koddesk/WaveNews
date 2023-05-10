@@ -16,6 +16,10 @@
 		2483C9952A0B80DC0034CB80 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C9942A0B80DC0034CB80 /* FavoritesViewController.swift */; };
 		2483C9972A0B80E90034CB80 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C9962A0B80E90034CB80 /* ProfileViewController.swift */; };
 		2483C9992A0B817F0034CB80 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C9982A0B817F0034CB80 /* MainTabBarViewController.swift */; };
+		2483C99E2A0B8F320034CB80 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2483C99B2A0B8F320034CB80 /* Inter-Bold.ttf */; };
+		2483C99F2A0B8F320034CB80 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2483C99C2A0B8F320034CB80 /* Inter-Regular.ttf */; };
+		2483C9A02A0B8F320034CB80 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2483C99D2A0B8F320034CB80 /* Inter-SemiBold.ttf */; };
+		2483C9A32A0B92150034CB80 /* UIFont + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C9A22A0B92150034CB80 /* UIFont + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		2483C9942A0B80DC0034CB80 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		2483C9962A0B80E90034CB80 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2483C9982A0B817F0034CB80 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		2483C99B2A0B8F320034CB80 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		2483C99C2A0B8F320034CB80 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		2483C99D2A0B8F320034CB80 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		2483C9A22A0B92150034CB80 /* UIFont + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,7 @@
 				2483C9942A0B80DC0034CB80 /* FavoritesViewController.swift */,
 				2483C9962A0B80E90034CB80 /* ProfileViewController.swift */,
 				2483C9982A0B817F0034CB80 /* MainTabBarViewController.swift */,
+				2483C9A12A0B91FA0034CB80 /* Extensions */,
 				2483C9902A0B7D580034CB80 /* Resources */,
 			);
 			path = WaveNews;
@@ -76,6 +85,7 @@
 		2483C9902A0B7D580034CB80 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2483C99A2A0B8E9A0034CB80 /* Fonts */,
 				2483C9852A0B7C500034CB80 /* Assets.xcassets */,
 				2483C9872A0B7C500034CB80 /* LaunchScreen.storyboard */,
 				2483C98A2A0B7C500034CB80 /* Info.plist */,
@@ -90,6 +100,24 @@
 				2483C97E2A0B7C4E0034CB80 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		2483C99A2A0B8E9A0034CB80 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2483C99B2A0B8F320034CB80 /* Inter-Bold.ttf */,
+				2483C99C2A0B8F320034CB80 /* Inter-Regular.ttf */,
+				2483C99D2A0B8F320034CB80 /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2483C9A12A0B91FA0034CB80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2483C9A22A0B92150034CB80 /* UIFont + Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +178,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2483C99E2A0B8F320034CB80 /* Inter-Bold.ttf in Resources */,
 				2483C9892A0B7C500034CB80 /* LaunchScreen.storyboard in Resources */,
+				2483C99F2A0B8F320034CB80 /* Inter-Regular.ttf in Resources */,
+				2483C9A02A0B8F320034CB80 /* Inter-SemiBold.ttf in Resources */,
 				2483C9862A0B7C500034CB80 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +197,7 @@
 				2483C9812A0B7C4E0034CB80 /* HomeViewController.swift in Sources */,
 				2483C97D2A0B7C4E0034CB80 /* AppDelegate.swift in Sources */,
 				2483C9992A0B817F0034CB80 /* MainTabBarViewController.swift in Sources */,
+				2483C9A32A0B92150034CB80 /* UIFont + Extensions.swift in Sources */,
 				2483C9932A0B80C60034CB80 /* CategoriesViewController.swift in Sources */,
 				2483C9952A0B80DC0034CB80 /* FavoritesViewController.swift in Sources */,
 				2483C97F2A0B7C4E0034CB80 /* SceneDelegate.swift in Sources */,
