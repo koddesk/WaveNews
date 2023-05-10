@@ -26,8 +26,6 @@ class HomeViewController: UIViewController {
     private func setupViews() {
         view.backgroundColor = .systemBackground
     }
-
-
 }
 
 extension HomeViewController {
