@@ -13,10 +13,10 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         tabBar.backgroundColor = .white
-        tabBar.unselectedItemTintColor = .label
+        tabBar.unselectedItemTintColor = .secondaryLabel
         tabBar.layer.borderWidth = 1
         tabBar.layer.cornerRadius = 16
-        tabBar.layer.borderColor = UIColor.label.cgColor
+        tabBar.layer.borderColor = UIColor.systemGray2.cgColor
         
         let vc1 = UINavigationController(rootViewController: HomeViewController())
         let vc2 = UINavigationController(rootViewController: CategoriesViewController())

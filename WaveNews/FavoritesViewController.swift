@@ -12,6 +12,25 @@ class FavoritesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+        setupViews()
+        setConstraints()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.title = "Favorites"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    private func setupViews() {
+        view.backgroundColor = .systemBackground
+    }
+}
+
+extension FavoritesViewController {
+    
+    private func setConstraints() {
+        
     }
 }

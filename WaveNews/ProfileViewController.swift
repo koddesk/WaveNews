@@ -12,6 +12,26 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .yellow
+        setupViews()
+        setConstraints()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.title = "Profile"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    private func setupViews() {
+        view.backgroundColor = .systemBackground
     }
 }
+
+extension ProfileViewController {
+    
+    private func setConstraints() {
+        
+    }
+}
+

@@ -12,6 +12,28 @@ class CategoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .green
+        setupViews()
+        setConstraints()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.title = "Categories"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    private func setupViews() {
+        view.backgroundColor = .systemBackground
     }
 }
+
+extension CategoriesViewController {
+    
+    private func setConstraints() {
+        
+    }
+}
+
+
+
