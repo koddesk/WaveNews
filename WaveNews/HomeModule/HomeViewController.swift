@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
         
         setupViews()
         setConstraints()
+        showOnboarding()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +35,12 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .specialBackground
         navigationItem.searchController = searchController
         
+    }
+    
+    private func showOnboarding() {
+        let onboardingViewController = OnboardingViewController()
+        onboardingViewController.modalPresentationStyle = .fullScreen
+        present(onboardingViewController, animated: false)
     }
 }
 
