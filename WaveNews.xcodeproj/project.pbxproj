@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244BBCD52A0C0D6C002411E2 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BBCD42A0C0D6C002411E2 /* SearchResultViewController.swift */; };
 		2483C97D2A0B7C4E0034CB80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C97C2A0B7C4E0034CB80 /* AppDelegate.swift */; };
 		2483C97F2A0B7C4E0034CB80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C97E2A0B7C4E0034CB80 /* SceneDelegate.swift */; };
 		2483C9812A0B7C4E0034CB80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C9802A0B7C4E0034CB80 /* HomeViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		244BBCD42A0C0D6C002411E2 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		2483C9792A0B7C4E0034CB80 /* WaveNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2483C97C2A0B7C4E0034CB80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2483C97E2A0B7C4E0034CB80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		244BBCD02A0BF247002411E2 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				2483C9802A0B7C4E0034CB80 /* HomeViewController.swift */,
+				244BBCD42A0C0D6C002411E2 /* SearchResultViewController.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		244BBCD12A0BF252002411E2 /* CategoriesModule */ = {
+			isa = PBXGroup;
+			children = (
+				2483C9922A0B80C60034CB80 /* CategoriesViewController.swift */,
+			);
+			path = CategoriesModule;
+			sourceTree = "<group>";
+		};
+		244BBCD22A0BF261002411E2 /* FavoritesModule */ = {
+			isa = PBXGroup;
+			children = (
+				2483C9942A0B80DC0034CB80 /* FavoritesViewController.swift */,
+			);
+			path = FavoritesModule;
+			sourceTree = "<group>";
+		};
+		244BBCD32A0BF26C002411E2 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				2483C9962A0B80E90034CB80 /* ProfileViewController.swift */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
 		2483C9702A0B7C4E0034CB80 = {
 			isa = PBXGroup;
 			children = (
@@ -73,10 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				2483C9912A0B7D770034CB80 /* Application */,
-				2483C9802A0B7C4E0034CB80 /* HomeViewController.swift */,
-				2483C9922A0B80C60034CB80 /* CategoriesViewController.swift */,
-				2483C9942A0B80DC0034CB80 /* FavoritesViewController.swift */,
-				2483C9962A0B80E90034CB80 /* ProfileViewController.swift */,
+				244BBCD02A0BF247002411E2 /* HomeModule */,
+				244BBCD12A0BF252002411E2 /* CategoriesModule */,
+				244BBCD22A0BF261002411E2 /* FavoritesModule */,
+				244BBCD32A0BF26C002411E2 /* ProfileModule */,
 				2483C9982A0B817F0034CB80 /* MainTabBarViewController.swift */,
 				2483C9A12A0B91FA0034CB80 /* Extensions */,
 				2483C9902A0B7D580034CB80 /* Resources */,
@@ -198,6 +233,7 @@
 			files = (
 				2483C9972A0B80E90034CB80 /* ProfileViewController.swift in Sources */,
 				2483C9812A0B7C4E0034CB80 /* HomeViewController.swift in Sources */,
+				244BBCD52A0C0D6C002411E2 /* SearchResultViewController.swift in Sources */,
 				2483C97D2A0B7C4E0034CB80 /* AppDelegate.swift in Sources */,
 				2483C9992A0B817F0034CB80 /* MainTabBarViewController.swift in Sources */,
 				2483C9A32A0B92150034CB80 /* UIFont + Extensions.swift in Sources */,

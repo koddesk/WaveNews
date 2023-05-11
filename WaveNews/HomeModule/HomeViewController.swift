@@ -8,7 +8,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    private let searchController: UISearchController = {
+        let controller = UISearchController(searchResultsController: SearchResultViewController())
+        controller.searchBar.placeholder = "Discover things of this world"
+        controller.searchBar.searchBarStyle = .minimal
+        return controller
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,13 +31,17 @@ class HomeViewController: UIViewController {
     }
     
     private func setupViews() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .specialBackground
+        navigationItem.searchController = searchController
+        
     }
 }
 
 extension HomeViewController {
     
     private func setConstraints() {
-        
+        NSLayoutConstraint.activate([
+            
+        ])
     }
 }
