@@ -36,6 +36,14 @@ class MiddleNewsCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    private lazy var favButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "bookmark"), for: .normal)
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -50,15 +58,12 @@ class MiddleNewsCollectionViewCell: UICollectionViewCell {
         addSubview(backgroundImage)
         addSubview(nameCategoryLabel)
         addSubview(newsHeadlineLabel)
+        addSubview(favButton)
     }
     
-    
-    
-    
-    
-    
-    
-    
+    @objc private func buttonTapped() {
+        print("SAVE")
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -81,6 +86,8 @@ extension MiddleNewsCollectionViewCell {
             newsHeadlineLabel.leadingAnchor.constraint(equalTo: backgroundImage.leadingAnchor, constant: 30),
             newsHeadlineLabel.trailingAnchor.constraint(equalTo: backgroundImage.trailingAnchor, constant: -30),
             
+            favButton.topAnchor.constraint(equalTo: backgroundImage.topAnchor, constant: 30),
+            favButton.trailingAnchor.constraint(equalTo: backgroundImage.trailingAnchor, constant: -30),
         ])
     }
 }
