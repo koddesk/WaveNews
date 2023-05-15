@@ -25,7 +25,7 @@ class HorizontalMenuCollectionView: UICollectionView {
     }
     
     private func configure() {
-        categoryLayout.minimumLineSpacing = 5
+        categoryLayout.minimumLineSpacing = 15
         categoryLayout.scrollDirection = .horizontal
         
         backgroundColor = .none
