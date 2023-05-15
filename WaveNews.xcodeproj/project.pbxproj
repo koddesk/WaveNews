@@ -27,6 +27,8 @@
 		2483C9A72A0B97410034CB80 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C9A62A0B97410034CB80 /* UIColor + Extensions.swift */; };
 		24CBA8922A122B9F00172907 /* HorizontalMenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBA8912A122B9F00172907 /* HorizontalMenuCollectionView.swift */; };
 		24CBA8952A122CF200172907 /* HorizontalMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBA8942A122CF200172907 /* HorizontalMenuCollectionViewCell.swift */; };
+		24CBA8972A123D5F00172907 /* MiddleNewsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBA8962A123D5F00172907 /* MiddleNewsCollectionView.swift */; };
+		24CBA8992A123F2B00172907 /* MiddleNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBA8982A123F2B00172907 /* MiddleNewsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		2483C9A62A0B97410034CB80 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
 		24CBA8912A122B9F00172907 /* HorizontalMenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalMenuCollectionView.swift; sourceTree = "<group>"; };
 		24CBA8942A122CF200172907 /* HorizontalMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		24CBA8962A123D5F00172907 /* MiddleNewsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleNewsCollectionView.swift; sourceTree = "<group>"; };
+		24CBA8982A123F2B00172907 /* MiddleNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleNewsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,7 @@
 			children = (
 				24CBA8932A122CD900172907 /* Cell */,
 				24CBA8912A122B9F00172907 /* HorizontalMenuCollectionView.swift */,
+				24CBA8962A123D5F00172907 /* MiddleNewsCollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				24CBA8942A122CF200172907 /* HorizontalMenuCollectionViewCell.swift */,
+				24CBA8982A123F2B00172907 /* MiddleNewsCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -317,11 +323,13 @@
 				2483C97D2A0B7C4E0034CB80 /* AppDelegate.swift in Sources */,
 				2483C9992A0B817F0034CB80 /* MainTabBarViewController.swift in Sources */,
 				2457DB9C2A0D0E0A0064656A /* OnboardingCollectionViewCell.swift in Sources */,
+				24CBA8992A123F2B00172907 /* MiddleNewsCollectionViewCell.swift in Sources */,
 				2483C9A32A0B92150034CB80 /* UIFont + Extensions.swift in Sources */,
 				2483C9932A0B80C60034CB80 /* CategoriesViewController.swift in Sources */,
 				2483C9A72A0B97410034CB80 /* UIColor + Extensions.swift in Sources */,
 				24CBA8922A122B9F00172907 /* HorizontalMenuCollectionView.swift in Sources */,
 				2457DB992A0CF1210064656A /* OnboardingSlide.swift in Sources */,
+				24CBA8972A123D5F00172907 /* MiddleNewsCollectionView.swift in Sources */,
 				2483C9952A0B80DC0034CB80 /* FavoritesViewController.swift in Sources */,
 				2457DB922A0CE9520064656A /* OnboardingViewController.swift in Sources */,
 				2483C97F2A0B7C4E0034CB80 /* SceneDelegate.swift in Sources */,

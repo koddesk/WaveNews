@@ -11,7 +11,7 @@ class HorizontalMenuCollectionView: UICollectionView {
     
     private let categoryLayout = UICollectionViewFlowLayout()
     
-    private let nameCategoryArray = ["Random", "Sports", "Gaming", "Politics",
+    let nameCategoryArray = ["Random", "Sports", "Gaming", "Politics",
                                      "Nature", "Life", "Fashion", "History", "Art"]
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -25,7 +25,7 @@ class HorizontalMenuCollectionView: UICollectionView {
     }
     
     private func configure() {
-        categoryLayout.minimumLineSpacing = 5
+        categoryLayout.minimumLineSpacing = 15
         categoryLayout.scrollDirection = .horizontal
         
         backgroundColor = .none

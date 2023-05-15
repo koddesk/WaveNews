@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     }()
     
     private let horizontalMenu = HorizontalMenuCollectionView()
+    private let middleCollectionView = MiddleNewsCollectionView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,7 @@ class HomeViewController: UIViewController {
         navigationItem.searchController = searchController
         
         view.addSubview(horizontalMenu)
+        view.addSubview(middleCollectionView)
         
     }
     
@@ -55,7 +57,12 @@ extension HomeViewController {
             horizontalMenu.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             horizontalMenu.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             horizontalMenu.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            horizontalMenu.heightAnchor.constraint(equalToConstant: 30)
+            horizontalMenu.heightAnchor.constraint(equalToConstant: 30),
+            
+            middleCollectionView.topAnchor.constraint(equalTo: horizontalMenu.bottomAnchor, constant: 25),
+            middleCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            middleCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            middleCollectionView.heightAnchor.constraint(equalToConstant: 260)
         ])
     }
 }
