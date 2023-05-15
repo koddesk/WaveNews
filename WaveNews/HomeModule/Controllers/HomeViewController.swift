@@ -16,6 +16,8 @@ class HomeViewController: UIViewController {
         return controller
     }()
     
+    private let horizontalMenu = HorizontalMenuCollectionView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +37,8 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .specialBackground
         navigationItem.searchController = searchController
         
+        view.addSubview(horizontalMenu)
+        
     }
     
     private func showOnboarding() {
@@ -44,11 +48,14 @@ class HomeViewController: UIViewController {
     }
 }
 
+//MARK: - Constraints
 extension HomeViewController {
-    
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            
+            horizontalMenu.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+            horizontalMenu.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            horizontalMenu.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            horizontalMenu.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
 }

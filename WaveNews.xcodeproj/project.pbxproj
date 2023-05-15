@@ -25,6 +25,8 @@
 		2483C9A02A0B8F320034CB80 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2483C99D2A0B8F320034CB80 /* Inter-SemiBold.ttf */; };
 		2483C9A32A0B92150034CB80 /* UIFont + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C9A22A0B92150034CB80 /* UIFont + Extensions.swift */; };
 		2483C9A72A0B97410034CB80 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C9A62A0B97410034CB80 /* UIColor + Extensions.swift */; };
+		24CBA8922A122B9F00172907 /* HorizontalMenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBA8912A122B9F00172907 /* HorizontalMenuCollectionView.swift */; };
+		24CBA8952A122CF200172907 /* HorizontalMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBA8942A122CF200172907 /* HorizontalMenuCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		2483C99D2A0B8F320034CB80 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		2483C9A22A0B92150034CB80 /* UIFont + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extensions.swift"; sourceTree = "<group>"; };
 		2483C9A62A0B97410034CB80 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		24CBA8912A122B9F00172907 /* HorizontalMenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalMenuCollectionView.swift; sourceTree = "<group>"; };
+		24CBA8942A122CF200172907 /* HorizontalMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +68,8 @@
 		244BBCD02A0BF247002411E2 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
-				2483C9802A0B7C4E0034CB80 /* HomeViewController.swift */,
-				244BBCD42A0C0D6C002411E2 /* SearchResultViewController.swift */,
+				24CBA8902A122B7800172907 /* View */,
+				24CBA88F2A122B6B00172907 /* Controllers */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -207,6 +211,32 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		24CBA88F2A122B6B00172907 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2483C9802A0B7C4E0034CB80 /* HomeViewController.swift */,
+				244BBCD42A0C0D6C002411E2 /* SearchResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		24CBA8902A122B7800172907 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24CBA8932A122CD900172907 /* Cell */,
+				24CBA8912A122B9F00172907 /* HorizontalMenuCollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24CBA8932A122CD900172907 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				24CBA8942A122CF200172907 /* HorizontalMenuCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,12 +313,14 @@
 				2483C9972A0B80E90034CB80 /* ProfileViewController.swift in Sources */,
 				2483C9812A0B7C4E0034CB80 /* HomeViewController.swift in Sources */,
 				244BBCD52A0C0D6C002411E2 /* SearchResultViewController.swift in Sources */,
+				24CBA8952A122CF200172907 /* HorizontalMenuCollectionViewCell.swift in Sources */,
 				2483C97D2A0B7C4E0034CB80 /* AppDelegate.swift in Sources */,
 				2483C9992A0B817F0034CB80 /* MainTabBarViewController.swift in Sources */,
 				2457DB9C2A0D0E0A0064656A /* OnboardingCollectionViewCell.swift in Sources */,
 				2483C9A32A0B92150034CB80 /* UIFont + Extensions.swift in Sources */,
 				2483C9932A0B80C60034CB80 /* CategoriesViewController.swift in Sources */,
 				2483C9A72A0B97410034CB80 /* UIColor + Extensions.swift in Sources */,
+				24CBA8922A122B9F00172907 /* HorizontalMenuCollectionView.swift in Sources */,
 				2457DB992A0CF1210064656A /* OnboardingSlide.swift in Sources */,
 				2483C9952A0B80DC0034CB80 /* FavoritesViewController.swift in Sources */,
 				2457DB922A0CE9520064656A /* OnboardingViewController.swift in Sources */,
