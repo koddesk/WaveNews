@@ -39,13 +39,16 @@ class MiddleNewsCollectionView: UICollectionView {
 //MARK: - UICollectionViewDataSource
 extension MiddleNewsCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        //FIX
+        HorizontalMenuCollectionView().nameCategoryArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MiddleNewsCollectionViewCell else {
             return UICollectionViewCell()
         }
+        //FIX
+        cell.nameCategoryLabel.text = HorizontalMenuCollectionView().nameCategoryArray[indexPath.item]
         return cell
     }
 }

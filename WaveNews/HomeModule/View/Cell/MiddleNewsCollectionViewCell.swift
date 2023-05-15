@@ -9,7 +9,7 @@ import UIKit
 
 class MiddleNewsCollectionViewCell: UICollectionViewCell {
     
-    private let backgroundImage: UIImageView = {
+    let backgroundImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "newss")
         imageView.contentMode = .scaleAspectFit
@@ -17,7 +17,7 @@ class MiddleNewsCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    private let nameCategoryLabel: UILabel = {
+    let nameCategoryLabel: UILabel = {
         let label = UILabel()
         label.textColor = .specialBackground
         label.text = "POLITICS"
@@ -26,7 +26,7 @@ class MiddleNewsCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    private let newsHeadlineLabel: UILabel = {
+    let newsHeadlineLabel: UILabel = {
         let label = UILabel()
         label.textColor = .specialBackground
         label.text = "The latest situation in the presidential election"
