@@ -29,6 +29,8 @@
 		24CBA8952A122CF200172907 /* HorizontalMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBA8942A122CF200172907 /* HorizontalMenuCollectionViewCell.swift */; };
 		24CBA8972A123D5F00172907 /* MiddleNewsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBA8962A123D5F00172907 /* MiddleNewsCollectionView.swift */; };
 		24CBA8992A123F2B00172907 /* MiddleNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBA8982A123F2B00172907 /* MiddleNewsCollectionViewCell.swift */; };
+		24FA3A132A128350008D3595 /* RecommendedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA3A122A128350008D3595 /* RecommendedTableView.swift */; };
+		24FC99C82A1390AD0039D7B8 /* RecommendedTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC99C72A1390AD0039D7B8 /* RecommendedTableHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		24CBA8942A122CF200172907 /* HorizontalMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		24CBA8962A123D5F00172907 /* MiddleNewsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleNewsCollectionView.swift; sourceTree = "<group>"; };
 		24CBA8982A123F2B00172907 /* MiddleNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleNewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		24FA3A122A128350008D3595 /* RecommendedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTableView.swift; sourceTree = "<group>"; };
+		24FC99C72A1390AD0039D7B8 /* RecommendedTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTableHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,8 @@
 				24CBA8932A122CD900172907 /* Cell */,
 				24CBA8912A122B9F00172907 /* HorizontalMenuCollectionView.swift */,
 				24CBA8962A123D5F00172907 /* MiddleNewsCollectionView.swift */,
+				24FA3A122A128350008D3595 /* RecommendedTableView.swift */,
+				24FC99C72A1390AD0039D7B8 /* RecommendedTableHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,7 +331,9 @@
 				2457DB9C2A0D0E0A0064656A /* OnboardingCollectionViewCell.swift in Sources */,
 				24CBA8992A123F2B00172907 /* MiddleNewsCollectionViewCell.swift in Sources */,
 				2483C9A32A0B92150034CB80 /* UIFont + Extensions.swift in Sources */,
+				24FA3A132A128350008D3595 /* RecommendedTableView.swift in Sources */,
 				2483C9932A0B80C60034CB80 /* CategoriesViewController.swift in Sources */,
+				24FC99C82A1390AD0039D7B8 /* RecommendedTableHeader.swift in Sources */,
 				2483C9A72A0B97410034CB80 /* UIColor + Extensions.swift in Sources */,
 				24CBA8922A122B9F00172907 /* HorizontalMenuCollectionView.swift in Sources */,
 				2457DB992A0CF1210064656A /* OnboardingSlide.swift in Sources */,
