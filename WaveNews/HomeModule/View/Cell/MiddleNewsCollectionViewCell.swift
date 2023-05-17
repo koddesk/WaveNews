@@ -20,7 +20,6 @@ class MiddleNewsCollectionViewCell: UICollectionViewCell {
     let nameCategoryLabel: UILabel = {
         let label = UILabel()
         label.textColor = .specialBackground
-        label.text = "POLITICS"
         label.font = UIFont.interRegular16()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

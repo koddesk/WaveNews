@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
     
     private let horizontalMenu = HorizontalMenuCollectionView()
     private let middleCollectionView = MiddleNewsCollectionView()
+    private let recommendedTableView = RecommendedTableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,12 +41,12 @@ class HomeViewController: UIViewController {
         
         view.addSubview(horizontalMenu)
         view.addSubview(middleCollectionView)
-        
+        view.addSubview(recommendedTableView)
     }
     
     private func showOnboarding() {
         let onboardingViewController = OnboardingViewController()
-        onboardingViewController.modalPresentationStyle = .fullScreen
+        onboardingViewController.modalPresentationStyle = .automatic
         present(onboardingViewController, animated: false)
     }
 }
@@ -62,7 +63,12 @@ extension HomeViewController {
             middleCollectionView.topAnchor.constraint(equalTo: horizontalMenu.bottomAnchor, constant: 25),
             middleCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             middleCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            middleCollectionView.heightAnchor.constraint(equalToConstant: 260)
+            middleCollectionView.heightAnchor.constraint(equalToConstant: 260),
+            
+            recommendedTableView.topAnchor.constraint(equalTo: middleCollectionView.bottomAnchor, constant: 30),
+            recommendedTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            recommendedTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            recommendedTableView.heightAnchor.constraint(equalToConstant: 368)
         ])
     }
 }
