@@ -25,7 +25,7 @@ class RecommendedTableView: UITableView {
         delegate = self
         dataSource = self
         register(RecommendedTableHeader.self, forHeaderFooterViewReuseIdentifier: "header")
-        register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        register(RecommendedTableViewCell.self, forCellReuseIdentifier: RecommendedTableViewCell.identifier)
     }
     
     required init?(coder: NSCoder) {
@@ -40,8 +40,9 @@ extension RecommendedTableView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Recommended"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RecommendedTableViewCell.identifier, for: indexPath) as? RecommendedTableViewCell else {
+            return UITableViewCell()
+        }
         return cell
     }
 }
@@ -55,6 +56,10 @@ extension RecommendedTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = dequeueReusableHeaderFooterView(withIdentifier: "header")
         return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

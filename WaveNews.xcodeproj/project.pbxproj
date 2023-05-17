@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241C0BD02A14B8C800B15448 /* RecommendedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C0BCF2A14B8C800B15448 /* RecommendedTableViewCell.swift */; };
 		244BBCD52A0C0D6C002411E2 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BBCD42A0C0D6C002411E2 /* SearchResultViewController.swift */; };
 		2457DB922A0CE9520064656A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457DB912A0CE9520064656A /* OnboardingViewController.swift */; };
 		2457DB992A0CF1210064656A /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457DB982A0CF1210064656A /* OnboardingSlide.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		241C0BCF2A14B8C800B15448 /* RecommendedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTableViewCell.swift; sourceTree = "<group>"; };
 		244BBCD42A0C0D6C002411E2 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		2457DB912A0CE9520064656A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		2457DB982A0CF1210064656A /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			children = (
 				24CBA8942A122CF200172907 /* HorizontalMenuCollectionViewCell.swift */,
 				24CBA8982A123F2B00172907 /* MiddleNewsCollectionViewCell.swift */,
+				241C0BCF2A14B8C800B15448 /* RecommendedTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				2483C97D2A0B7C4E0034CB80 /* AppDelegate.swift in Sources */,
 				2483C9992A0B817F0034CB80 /* MainTabBarViewController.swift in Sources */,
 				2457DB9C2A0D0E0A0064656A /* OnboardingCollectionViewCell.swift in Sources */,
+				241C0BD02A14B8C800B15448 /* RecommendedTableViewCell.swift in Sources */,
 				24CBA8992A123F2B00172907 /* MiddleNewsCollectionViewCell.swift in Sources */,
 				2483C9A32A0B92150034CB80 /* UIFont + Extensions.swift in Sources */,
 				24FA3A132A128350008D3595 /* RecommendedTableView.swift in Sources */,
