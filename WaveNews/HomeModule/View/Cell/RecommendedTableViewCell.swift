@@ -32,7 +32,7 @@ class RecommendedTableViewCell: UITableViewCell {
     
     private let newsHeadlineLabel: UILabel = {
         let label = UILabel()
-        label.numberOfLines = 2
+        label.numberOfLines = 3
         label.text = "A Simple Trick For Creating Color Palettes Quickly"
         label.font = UIFont.interSemiBold16()
         label.textColor = .specialBlack
@@ -50,7 +50,7 @@ class RecommendedTableViewCell: UITableViewCell {
     private func configure() {
         backgroundColor = .none
         selectionStyle = .none
-        layer.cornerRadius = 10
+        layer.cornerRadius = 20
         
         contentView.addSubview(newsImageView)
         contentView.addSubview(newsCategoriesLabel)
@@ -66,10 +66,10 @@ class RecommendedTableViewCell: UITableViewCell {
 extension RecommendedTableViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            newsImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            newsImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             newsImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            newsImageView.heightAnchor.constraint(equalToConstant: 90),
-            newsImageView.widthAnchor.constraint(equalToConstant: 90),
+            newsImageView.heightAnchor.constraint(equalToConstant: 120),
+            newsImageView.widthAnchor.constraint(equalToConstant: 120),
             
             newsCategoriesLabel.leadingAnchor.constraint(equalTo: newsImageView.trailingAnchor, constant: 15),
             newsCategoriesLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),

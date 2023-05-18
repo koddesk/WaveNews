@@ -65,10 +65,10 @@ extension HomeViewController {
             middleCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             middleCollectionView.heightAnchor.constraint(equalToConstant: 260),
             
-            recommendedTableView.topAnchor.constraint(equalTo: middleCollectionView.bottomAnchor, constant: 30),
+            recommendedTableView.topAnchor.constraint(equalTo: middleCollectionView.bottomAnchor, constant: 20),
             recommendedTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             recommendedTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            recommendedTableView.heightAnchor.constraint(equalToConstant: 368)
+            recommendedTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
         ])
     }
 }
